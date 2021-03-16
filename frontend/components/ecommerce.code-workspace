@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Advanced-React-master/finished-application"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
