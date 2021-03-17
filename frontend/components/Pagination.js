@@ -24,7 +24,7 @@ export default function Pagination({ page }) {
     <PaginationStyles>
       <Head>
         <title>
-          Super-ME - Page {page} of {pageCount}
+          Superme - Page {page} of {pageCount}
         </title>
       </Head>
       <Link href={`/products/${page - 1}`}>
