@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "sick-fits-frontend",
   "version": "1.0.0",
-  "description": "An example React, GraphQL, Next and Apollo",
+  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
