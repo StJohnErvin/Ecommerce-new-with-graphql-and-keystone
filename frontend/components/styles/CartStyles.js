@@ -19,12 +19,12 @@ const CartStyles = styled.div`
   grid-template-rows: auto 1fr auto;
   ${props => props.open && `transform: translateX(0);`};
   header {
-    border-bottom: 5px solid ${props => props.theme.black};
+    border-bottom: 5px solid var(--lightgrey);
     margin-bottom: 2rem;
     padding-bottom: 2rem;
   }
   footer {
-    border-top: 10px double ${props => props.theme.black};
+    border-top: 10px double var(--lightgrey);
     margin-top: 2rem;
     padding-top: 2rem;
     display: grid;
