@@ -30,6 +30,9 @@ export default function Home() {
           ProductImage: _allProductImagesMeta {
             count
           }
+          CartItem: _allCartItemsMeta {
+            count
+          }
         }
       `}
     />
