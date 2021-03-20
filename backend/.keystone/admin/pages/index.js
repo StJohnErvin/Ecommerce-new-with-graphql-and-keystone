@@ -33,6 +33,15 @@ export default function Home() {
           CartItem: _allCartItemsMeta {
             count
           }
+          OrderItem: _allOrderItemsMeta {
+            count
+          }
+          Order: _allOrdersMeta {
+            count
+          }
+          Role: _allRolesMeta {
+            count
+          }
         }
       `}
     />

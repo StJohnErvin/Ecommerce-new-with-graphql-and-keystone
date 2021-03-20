@@ -1,10 +1,13 @@
-/* eslint-disable */
 import { createAuth } from '@keystone-next/auth';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import {
   withItemData,
   statelessSessions,
 } from '@keystone-next/keystone/session';
+import { permissionsList } from './schemas/fields';
+import { Role } from './schemas/Role';
+import { OrderItem } from './schemas/OrderItem';
+import { Order } from './schemas/Order';
 import { CartItem } from './schemas/CartItem';
 import { ProductImage } from './schemas/ProductImage';
 import { Product } from './schemas/Product';
@@ -65,6 +68,9 @@ export default withAuth(
       Product,
       ProductImage,
       CartItem,
+      OrderItem,
+      Order,
+      Role,
     }),
     extendGraphqlSchema,
     ui: {
@@ -75,7 +81,7 @@ export default withAuth(
     },
     session: withItemData(statelessSessions(sessionConfig), {
       // GraphQL Query
-      User: 'id name email',
+      User: `id name email role { ${permissionsList.join(' ')} }`,
     }),
   })
 );
